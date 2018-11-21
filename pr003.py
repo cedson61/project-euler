@@ -1,14 +1,15 @@
-rdef solve():
+import time
+
+def solve():
     n = 600851475143
     while True:
-        p = spf(n)
+        p = lpf(n)
         if p < n:
             n //= p
         else:
             return str(n)
 
-
-def spf(n):
+def lpf(n):
     assert n >= 2
     for i in range(2, sqrt(n) + 1):
         if n % i == 0:
@@ -26,5 +27,11 @@ def sqrt(x):
         i //= 2
     return y
 
-if __name__ == "__main__":
-    print(solve())
+start = time.time()
+
+butthole = solve()
+
+elapsed = time.time() - start
+
+print ("%s found in %s seconds.") % (butthole,elapsed)
+
