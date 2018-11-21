@@ -2,7 +2,7 @@ import time
 
 
 def solve():
-    g = 380
+    g = 2520
     while True:
         b = True
         for x in range(11,20):
@@ -13,7 +13,7 @@ def solve():
         if (b):
             return g
             break
-        g += 380
+        g += 2520
         print g
 
 

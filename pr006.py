@@ -5,7 +5,7 @@ def ss1(n):
     squared = sum**2
     return squared
  
-def ss2(n):
+def ss2 (n):
     sum = 0
     for i in range(n + 1):
         sum += i**2
