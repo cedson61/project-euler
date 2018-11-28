@@ -15,10 +15,12 @@ def nth_prime(n):
 def isprime(n):
 	while True:
 		b = True
-		if n % 2 ==0:
+		if n % 2 == 0:
+		 b = False
+		if n % 5 == 0:
 		 b = False
 		d = 3
-		while d < n**0.5+1:
+		while d < (n**0.5)+1:
 			if n % d == 0: b = False
 			d += 2
 		print d
